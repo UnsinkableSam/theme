@@ -1,0 +1,59 @@
+@import url(modules/grid-float-copy.less);
+
+@magicNumber: 24px;
+
+@columnWidth:   30;
+@gutterWidth:   10;
+@columns:       24;
+
+
+
+
+
+.outer-wrap-header,
+.outer-wrap-main,
+.footer-column-wrapper {
+    margin-bottom: @magicNumber;
+}
+.footer-column-wrapper {
+    .clearfix();
+
+}
+.row {
+    .row();
+
+}
+
+
+
+.breadcrumb-list {
+    .column(24);
+}
+
+.site-logo-text {
+    .column(6);
+}
+
+.navbar2{
+    .column(24);
+}
+
+.main {
+    .column(22);
+    .push(2);
+
+}
+
+
+.footer-column {
+    .column(@columns / 3);
+}
+
+
+.site-footer {
+    .column(14.5);
+    .push(8.5);
+    ul {
+        .push(1.5);
+    }
+}

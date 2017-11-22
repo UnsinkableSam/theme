@@ -1,13 +1,7 @@
-/** 
-* Anax Flat theme.
-*/
+
 @import url(modules.less);
 
 
-
-/** --------------------------------------------------------------
- *  Logo images
- */
 .logo-1 {
     position: absolute;
     top: 70px;
@@ -18,4 +12,56 @@
     img {
         vertical-align: bottom;
     }
+}
+
+body {
+
+    .wrap-all {
+        margin: 0 auto;
+        border: 1px solid black;
+        background-color: @atumnOrange;
+        .border();
+        ul {list-style-type: none;}
+        .breadcrumb-list {//border: 5px solid yellow
+                       background-color: @atumnYellow;
+                        padding-bottom: 5%;
+                        .whiteLinksHover();
+                    }
+    }
+}
+
+
+.main {
+
+    .article {
+        width: 100%;
+        min-height: 400px;
+        img {width: 50%;}
+    }
+
+    .next-previous {
+        padding-bottom: 2%;
+        margin-top: 5%;
+        a {
+            text-decoration: none;
+            color: black;}
+    }
+}
+
+.next {
+    float:right;
+
+}
+
+.previous {
+    float:left;
+}
+
+
+.after-main {
+
+    .content {
+        border: 1px solid black;
+            padding-left: 5%;}
+    img {width: 10%;}
 }
